@@ -1,0 +1,56 @@
+doctype
+html
+    head
+        meta(charset='utf-8')
+        title Windjammers Liferay Tournament
+        meta(content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport')
+        // STYLES
+        link(rel='stylesheet' href='css/main.css')
+    body(data-spy='scroll',data-offset='90')#top
+
+        style.
+            @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+            @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css');
+
+        .container.text-center.mt-3.text-white
+            img(src="http://www.dotemu.com/wp-content/uploads/2016/12/LOGO-HD.png", width="300px")
+            p.font-italic.display-4 Liferay tournament
+
+        .container.text-center.text-white
+            h2.my-5 Discart maps and press Random button:
+            .row
+                .col-6.col-md-4.col-xl-2
+                    button.p-2.btn.btn-lg.btn-outline-light.my-2.enabled.btn-beach
+                        img(src='images/beach.png', width='150')
+                        p.m-0 BEACH
+                .col-6.col-md-4.col-xl-2
+                    button.p-2.btn.btn-lg.btn-outline-light.my-2.enabled.btn-lawn
+                        img(src='images/lawn.png', width='150')
+                        p.m-0 LAWN
+                .col-6.col-md-4.col-xl-2
+                    button.p-2.btn.btn-lg.btn-outline-light.my-2.enabled.btn-tiled
+                        img(src='images/tiled.png', width='150')
+                        p.m-0 TILED
+                .col-6.col-md-4.col-xl-2
+                    button.p-2.btn.btn-lg.btn-outline-light.my-2.enabled.btn-concrete
+                        img(src='images/concrete.png', width='150')
+                        p.m-0 CONCRETE
+                .col-6.col-md-4.col-xl-2
+                    button.p-2.btn.btn-lg.btn-outline-light.my-2.enabled.btn-clay
+                        img(src='images/clay.png', width='150')
+                        p.m-0 CLAY
+                .col-6.col-md-4.col-xl-2
+                    button.p-2.btn.btn-lg.btn-outline-light.my-2.enabled.btn-stadium
+                        img(src='images/stadium.png', width='150')
+                        p.m-0 STADIUM
+
+            .row.my-2.my-lg-5
+                .col-12
+                    button.mt-4.btn.btn-danger.btn-random Random !
+
+        #modal.modal.fade.bd-example-modal-xl(tabindex='-1' role='dialog', aria-hidden='true')
+            .modal-dialog.modal-lg
+                .modal-content
+                    h1.pt-4.text-center.text-white The match will be played in:
+
+script(src='js/jsOneFile/scripts.min.js' charset='utf-8')
